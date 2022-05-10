@@ -1,0 +1,83 @@
+{% extends './layout.html' %}
+
+{% block tittle %}paginatest5{% endblock %}
+
+{% block customCSS %}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/paginatest5.css')}}">
+{% endblock %}
+
+{% block body %}
+<header id="header">
+    <nav class="navbar">
+        <img src="https://game-tournaments.com/media/logo/t25586.png" class="logo">
+        <ul class="menu">
+            <li><i class="header-fa fas fa-home"><a href=home>Home</a></li></i>
+            <li><i class="header-fa fas fa-truck"><a href=form>Primer form</a></li></i>
+            <li><i class="header-fa fas fa-question-circle"><a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Troll</a></li></i>
+            <li><i class="header-fa fas fa-user-friends"><a href=paginatest1>Test 1</a></li></i>
+            <li><i class="header-fa fas fa-user-friends"><a href=paginatest2>Test 2</a></li></i>
+            <li><i class="header-fa fas fa-user-friends"><a href=paginatest3>Test 3</a></li></i>
+            <li><i class="header-fa fas fa-user-friends"><a href=paginatest4>Test 4</a></li></i>
+        </ul>
+        <div class="menu-bar">
+            <i class="header-fa fas fa-bars"></i>
+        </div>
+        <div class="shopping">
+            <a href="{{ url_for('logout') }}"><i class="header-fa fas fa-shopping-cart"></i></a>
+        </div>
+    </nav>
+</header>
+
+<main class="hero">
+    <div class="img-fondo" id="Me">
+        <section class="info-content" id="welcome-section">
+            <h3>Developer</h3>
+            <h1>Cucchi Santiago</h1>
+            <p>"No es que nosotros seamos tan buenos, sino que los demás son peores"</p>
+            <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><button class="btn">Read More</button></a>
+        </section>
+    </div>
+    <div class="project-fondo" id="Proyect">
+        <section class="project-ready" id="projects">
+            <h2>My projects</h2>
+            <div class="project-grid">
+                <a class="project-tile" href="https://codepen.io/cucchi10/full/xxpmEYa" target="_blank">
+                    <img class="project-img" src="https://i.ibb.co/J3W2R1m/imagen1.png" alt="imagen1">
+                    <p class="project-title">Construye una página tributo</p>
+                </a>
+                <a class="project-tile" href="https://codepen.io/cucchi10/full/mdpaYZw" target="_blank">
+                    <img class="project-img" src="https://i.ibb.co/jVLKwWB/imagen2.png" alt="imagen2">
+                    <p class="project-title">Crea un Formulario de Encuesta</p>
+                </a>
+                <a class="project-tile" href="https://codepen.io/cucchi10/full/qBpwENr" target="_blank">
+                    <img class="project-img" src="https://i.ibb.co/kJHQB3R/imagen3.png" alt="imagen3">
+                    <p class="project-title">Construye una página de aterrizaje de producto</p>
+                </a>
+                <a class="project-tile" href="https://codepen.io/cucchi10/full/LYeKxBK" target="_blank">
+                    <img class="project-img" src="https://i.ibb.co/Ny5C4Ts/imagen4.png" alt="imagen4">
+                    <p class="project-title">Construye una página de documentación técnica</p>
+                </a>
+            </div>
+            <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><button class="btn">Click For More</button></a>
+        </section>
+    </div>
+</main>
+
+<footer id="footer" class="footer">
+    <div class="github-online">
+        <a id="prfile-link" href="https://github.com/cucchi10" target="_blank"><i class="footer-fa fab fa-github"></i></a>
+        <a id="prfile-link" href="https://www.linkedin.com/in/santiago-cucchi-89a349160/" target="_blank"><i class="footer-fa fab fa-linkedin"></i></a>
+        <a id="prfile-link" href="https://www.freecodecamp.org/cucchi10" target="_blank"><h4>Freecodecamp</h4></a>
+    </div>
+    <div class="follow-me">
+        <h2>Follow Me</h2>
+    </div>
+    <div class="social-network">
+        <a id="prfile-link" href="https://twitter.com/Cucchi93907296" target="_blank"><i class="footer-fa fab fa-twitter"></i></a>
+        <a id="prfile-link" href="https://www.facebook.com/cucchi.santiago" target="_blank"><i class="footer-fa fab fa-facebook"></i></a>
+        <a id="prfile-link" href="https://www.instagram.com/santicucchi/" target="_blank"><i class="footer-fa fab fa-instagram"></i></a>
+    </div>
+</footer>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends './layout.html' %}
+
+{% block tittle %}Home{% endblock %}
+
+{% block customCSS %}
+    <!-- Bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}">
+    <script src="https://kit.fontawesome.com/62ea397d3a.js" crpssprgom="anonymous"></script>
+{% endblock %}
+
+{% block body %}
+<header>
+    <nav class="nav">
+        <ul class="nav__ul nav__responsive-ul">
+            <div class="nav__responsive-button-container">
+                <div class="nav__responsive-button"><i class="fas fa-bars"></i></div>
+            </div>
+            <div class="nav__div-container nav__responsive-div-container">
+                <!-- <img class="mb-4" src="{{url_for('static', filename='img/underdogs.png')}}" alt="" width="150" height="150"> -->
+                <span class="nav__span nav__responsive-span span__img"><img src="{{url_for('static', filename='img/underdogs.png')}}" width="35" height="35"> </span>
+                <div class="nav__div nav__responsive-div"><i class="fas fa-home"></i><a href=form>Primer Form</a> </div>
+                <div class="nav__div nav__responsive-div"><i class="fas fa-user-friends"></i><a href=paginatest1>Test 1</a> </div>
+                <div class="nav__div nav__responsive-div"><i class="fas fa-dollar-sign"></i><a href=paginatest2>Test 2</a> </div>
+                <div class="nav__div nav__responsive-div"><i class="fas fa-question-circle"></i><a href=paginatest3>Test 3</a> </div>
+                <div class="nav__div nav__responsive-div"><i class="fas fa-dog"></i><a href=paginatest4>Test 4</a> </div>
+                <div class="nav__div nav__responsive-div"><i class="fas fa-cat"></i><a href=paginatest5>Test 5</a> </div>
+                <!-- <a class="btn btn-secondary button-logout" href="{{ url_for('logout') }}">Logout</a> -->
+                    <span class="nav__span nav__responsive-span button-logout"><a class="btn btn-secondary button-logout" href="{{ url_for('logout') }}">Logout</a> </span>
+            </div>
+        </ul>
+    </nav>
+</header>
+<div class="home-container">
+    <div class="container-h1">
+        <h1>Bienvenido, {{ current_user.fullname }}</h1>
+    </div>
+    <div class="container-img">
+        <img src="{{url_for('static', filename='img/underdogs.png')}}" width="100" height="100"> </span>
+    </div>
+</div>
+
+{% endblock %}

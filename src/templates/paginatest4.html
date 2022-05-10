@@ -1,0 +1,247 @@
+{% extends './layout.html' %}
+
+{% block tittle %}paginatest{% endblock %}
+
+{% block customCSS %}
+    <!-- Bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/paginatest4.css')}}">
+    <script src="https://kit.fontawesome.com/62ea397d3a.js" crpssprgom="anonymous"></script>
+{% endblock %}
+
+{% block body %}
+<header1>
+    <nav class="nav1">
+        <ul class="nav__ul nav__responsive-ul">
+            <div class="nav__responsive-button-container">
+                <div class="nav__responsive-button"><i class="fas fa-bars"></i></div>
+            </div>
+            <div class="nav__div-container nav__responsive-div-container">
+                <!-- <img class="mb-4" src="{{url_for('static', filename='img/underdogs.png')}}" alt="" width="150" height="150"> -->
+                <span class="nav__span nav__responsive-span span__img"><img src="{{url_for('static', filename='img/underdogs.png')}}" width="35" height="35"> </span>
+                <div class="nav__div nav__responsive-div"><i class="fas fa-home"></i><a href=home>Home</a> </div>
+                <div class="nav__div nav__responsive-div"><i class="fas fa-user-friends"></i><a href=paginatest1>Test 1</a> </div>
+                <div class="nav__div nav__responsive-div"><i class="fas fa-dollar-sign"></i><a href=paginatest2>Test 2</a> </div>
+                <div class="nav__div nav__responsive-div"><i class="fas fa-question-circle"></i><a href=paginatest3>Test 3</a> </div>
+                <div class="nav__div nav__responsive-div"><i class="fas fa-dog"></i><a href=form>Primer Form</a> </div>
+                <div class="nav__div nav__responsive-div"><i class="fas fa-cat"></i><a href=paginatest5>Test 5</a> </div>
+                <!-- <a class="btn btn-secondary button-logout" href="{{ url_for('logout') }}">Logout</a> -->
+                    <span class="nav__span nav__responsive-span button-logout"><a class="btn btn-secondary button-logout" href="{{ url_for('logout') }}">Logout</a> </span>
+            </div>
+        </ul>
+    </nav>
+</header1>
+<nav class="nav" id="navbar">
+    <div class="nav-responsive">
+        <header>World of Warcraft</header>
+    </div>
+    <ul class="nav_ul">
+        <li class="nav_li">
+            <a class="nav-link" href="#introduction">Introduction</a>
+        </li>
+        <li class="nav_li">
+            <a class="nav-link" href="#argumento">Argumento</a>
+        </li>
+        <li class="nav_li">
+            <a class="nav-link" href="#el_juego">El juego</a>
+        </li>
+        <li class="nav_li">
+            <a class="nav-link" href="#clases_y_roles">Clases y roles</a>
+        </li>
+        <li class="nav_li">
+            <a class="nav-link" href="#profesiones">Profesiones</a>
+        </li>
+        <li class="nav_li"> 
+            <a class="nav-link" href="#idiomas">Idiomas</a>
+        </li>
+        <li class="nav_li">
+            <a class="nav-link" href="#desarrollo">Desarrollo</a>
+        </li>
+        <li class="nav_li">
+            <a class="nav-link" href="#recepcion">Recepción</a>
+        </li>
+    </ul>
+  </nav>
+<main class="main" id="main-doc">
+    <section class="main-section" id="introduction">
+        <header>Introduction</header>
+        <p>World of Warcraft (abreviado como WoW, literalmente en español Mundo de Warcraft) es un videojuego de rol multijugador masivo en línea desarrollado por Blizzard Entertainment. Es el cuarto juego lanzado establecido en el universo fantástico de Warcraft, el cual fue introducido por primera vez por Warcraft: Orcs & Humans en 1994. World of Warcraft transcurre dentro del mundo de Azeroth, cuatro años después de los sucesos finales de la anterior entrega de Warcraft, Warcraft III: The Frozen Throne. Blizzard Entertainment anunció World of Warcraft el 2 de septiembre de 2001.
+
+            El juego fue lanzado el 23 de noviembre de 2004, celebrando el décimo aniversario de la franquicia Warcraft. La primera expansión del juego The Burning Crusade fue lanzada el 16 de enero del 2007. La segunda expansión, Wrath of the Lich King, fue lanzada el 13 de noviembre de 2008. La tercera expansión, World of Warcraft: Cataclysm fue anunciada en el BlizzCon 2009 y fue lanzada el 7 de diciembre de 2010. La cuarta expansión, World of Warcraft: Mists of Pandaria fue anunciada en el BlizzCon 2011 y fue lanzada el 25 de septiembre del 2012. La quinta expansión, World of Warcraft: Warlords of Draenor fue anunciada en el BlizzCon 2013 y fue lanzada el 13 de noviembre de 2014. La sexta expansión, World of Warcraft: Legion fue anunciada en el BlizzCon 2015 y fue lanzada el 30 de agosto de 2016. La séptima expansión, World of Warcraft: Battle for Azeroth fue anunciada en el BlizzCon 2017 y lanzada el 14 de agosto de 2018 siendo la primera expansión en la historia del juego en ser lanzada globalmente de forma simultánea. El 27 de octubre de 2020 fue lanzada la octava expansión, World of Warcraft: Shadowlands. Con 7.7 millones de suscriptores, World of Warcraft continúa siendo con diferencia el juego en línea por suscripción con el mayor registro de usuarios, manteniendo el récord Guinness para el MMORPG (Massive Multiplayer Online Rol Playing Game) más popular.
+            
+            En diciembre de 2013, gracias a los documentos secretos filtrados por Edward Snowden, salió a la luz que las agencias de inteligencia estadounidenses NSA y CIA, en colaboración con la británica GCHQ han estado vigilando y recogiendo datos de World of Warcraft y otros juegos de tipo MMORPG.
+        </p>
+    </section>
+    <section class="main-section" id="argumento">
+        <header>Argumento</header>
+        <h2>Versión clásica de los parches 1.x a 3.x</h2>
+        <p>Han pasado cinco años desde los eventos narrados en Warcraft 3. La Alianza y la Nueva Horda viven en un estado de guerra fría, y mantienen una frágil y quebradiza paz, mientras reconstruyen sus reinos y tratan de recuperar su prosperidad. En Ventormenta, el rey Varian Wrynn ha desaparecido en circunstancias misteriosas mientras viajaba en misión diplomática a la isla de Theramore, por lo que en su ausencia, es nombrado rey su hijo Anduin Wrynn, todavía un niño, asumiendo la regencia lord Bolvar Fordragon y la misteriosa lady Katrana Prestor. En Orgrimmar, el jefe de guerra Thrall lucha por sacar adelante a la Nueva Horda.
+        </p>
+        <h2>Versión actualizada de los parches 4.x y posteriores</h2>
+        <p>Tras los eventos narrados en Wrath of the Lich King, Arthas ha muerto, y la guerra en Rasganorte parece haber terminado, ya que la Plaga está controlada por Bolvar Fordragon, convertido en el nuevo Rey Exánime, el carcelero de los malditos. Pero entonces, misteriosos terremotos comienzan a sacudir toda la faz de Azeroth, y poco después, comienzan una serie de ataques elementales contra las capitales de la Alianza y la Horda. Estos ataques son el preludio del resurgimiento del Dragón Aspecto corrupto Alamuerte, que las destruirá, extendiendo su dañino poder por los dos continentes. Cinco años después, en los que se suceden los eventos narrados en la novela World of Warcraft: The Shattering, Ventormenta y Orgrimmar están en proceso de reconstrucción, y la faz del mundo en Azeroth ha cambiado por completo tras los ataques de Alamuerte, que han reducido a cenizas algunas zonas y han provocado violentos maremotos y terremotos que han partido literalmente la tierra en trozos, inundando algunas zonas y haciendo resurgir otras. Alamuerte ha vuelto con un solo objetivo, el de destruir Azeroth, y no se detendrá hasta conseguirlo.
+
+            Thrall, jefe de guerra de la Horda y chamán más poderoso de Azeroth, otorga el cargo de jefe de guerra a Garrosh Grito Infernal para unirse al Anillo de la Tierra en su lucha contra Alamuerte. Esta criticada y disputada decisión por parte de los altos cargos de la Horda llevará a esta nueva Horda a una serie de medidas en las que será palpable el afloramiento de la locura de Garrosh. Es necesaria la unión de los guerreros de la Horda y de la Alianza junto a los Dragones Aspecto para enfrentarse a los agentes de Alamuerte y destruir al mismo.
+        </p>
+    </section>
+    <section class="main-section" id="el_juego">
+        <header>El juego</header>
+        <p>Como en otros, los jugadores controlan un avatar dentro de un mundo en una vista de tercera persona (con la opción de jugar en primera persona) explorando el entorno, combatiendo contra varios monstruos y jugadores, completando misiones e interactuando con personajes no jugables (PNJ) u otros jugadores. El completar misiones ayudará a los jugadores a poder subir de nivel y de esta forma, podrán conseguir equipamiento que les ayudará más adelante a combatir a las distintas criaturas que vayan apareciendo en su camino.
+
+            En común con muchos otros MMORPG, World of Warcraft requiere que el jugador pague una suscripción, sea comprando tarjetas de juego preseleccionado un tiempo de juego, o usando una tarjeta de crédito o débito para pagar una cuota regular.
+        </p>
+        <h2>El Mundo</h2>
+        <p>El mapamundi de World of Warcraft es muy extenso, ya que cuenta (a partir de las expansiones) con CUATRO dimensiones o mundos: Azeroth, Terrallende, Draenor y Argus, que cada uno cuenta con continentes, numerosas regiones, ciudades y mazmorras que se pueden explorar. Las tierras incluidas con el juego básico son los Reinos del Este y Kalimdor. Después, con cada expansión se fue aumentando poco a poco el mapamundi añadiendo nuevas zonas a explorar, o remodelando las tierras anteriores, actualmente el juego base World of Warcraft Battlechest incluye contenido explorable hasta la expansión de Legion, incluyendo las dos tierras mencionadas anteriormente, Pandaria, Terrallende y Rasganorte.
+        </p>
+        <h2>Razas</h2>
+        <p>Existen un total de trece razas jugables divididas en dos facciones, la Alianza y la Horda, siendo la decimotercera raza (Pandaren) compartida por ambos bandos. Pertenecen a la Alianza: humanos, gnomos, enanos, elfos de la noche, draenéi, huarguens y pandarens; y pertenecen a la Horda: orcos, no-muertos renegados, troles, taurens, elfos de sangre, goblins y pandarens. En la mayoría de las zonas, la Alianza y la Horda están en guerra una con la otra, aunque existen zonas neutrales como la ciudad flotante de Dalaran o la Ciudadela de Shattrath, estas zonas son conocidas como santuarios.
+        </p>
+    </section>
+    <section class="main-section" id="clases_y_roles">
+        <header>Clases y roles</header>
+        <p></p>
+        <h2>Roles</h2>
+        <p>En World of Warcraft un jugador tiene acceso a doce tipos de clases (según la expansión Legion) restringida según la raza que se seleccione. Además de la diferencia existente entre cada clase, estas pueden elegir una rama de talentos entre un total de tres (o cuatro si se selecciona druida como clase), aumentando la diferencia entre estas.
+        </p>
+        <h2>Roles</h2>
+        <p>Independientemente de la clase, existen tres roles, los tanques, los sanadores y los DPS (del inglés damage per second, daño por segundo)
+        </p>
+        <ul>
+            <li><b>Tanques</b>: tienen la misión de atraer los enemigos recibir el daño de estos, ya que tienen la capacidad de aguantar mucho daño y sobrevivir más que otras clases. Son personajes con muchos atributos defensivos (bloquear, esquivar, parar), muchos puntos de vida y armadura para reducir al máximo el daño que reciben. El juego usa un sistema para medir el foco de ataque de los enemigos llamado amenaza. Los tanques son los que más puntos de amenaza suelen obtener durante el combate y, por ende, reciben todo el daño, sin embargo, poseen una capacidad ofensiva muy reducida (es ahí donde se necesita el daño de los DPS). El tanque por excelencia suele ser el guerrero protección, pero con las expansiones, han ido mejorando las demás clases, como al druida guardián, al paladín protección, añadiendo a los caballeros de la muerte para diversificar este rol, los monjes maestros cerveceros y los cazadores de demonios venganza añadidos en la expansión Legion</li>
+            <li><b>Sanadores</b>: también llamados sanadores o healers (del inglés heal, curar). Se encargan de curar y mantener vivos a todos los jugadores del grupo, en especial al tanque. Su poder ofensivo suele ser limitado. El tipo de armadura suele ser diverso, ya que los sacerdotes usan telas, los druidas cuero, los chamanes mallas y los paladines placas. Las estadísticas primarias en el equipo suelen ser el Intelecto y el Espíritu, además del Poder con Hechizos. El sanador por excelencia al principio del juego solía ser el sacerdote y, aunque el resto de clases con posibilidades de sanación no estaban tan mal como en el caso del tanque, también han sido mejoradas. Los sanadores son paladin sagrado, druida restauración, sacerdote disciplina y sagrado, chamán restauración y monje tejedor de niebla. Las habilidades de los sanadores no solo son sanadoras. Estos, además de curar (y dar algo de daño), también pueden tener habilidades que obstaculizan al enemigo en el momento del pvp</li>
+            <li><b>DPS</b>: sigla de daño por segundo. Se encargan de golpear al enemigo y bajarle la vida hasta derrotarlo. Son el tipo más diverso y hay de muchos tipos, a distancia (cazadores), cuerpo a cuerpo (guerrero, chamán mejora, caballero de la muerte, pícaro, paladín, druida feral, monjes viajero del viento, cazador de demonios devastación) y mágicos o los lanzadores o casters (mago, brujo, sacerdote sombras, chamán elemental, druida equilibrio). Sus puntos de vida suelen ser la mitad que la de los tanques, pero el daño que infligen es superior con respecto a los otros roles y prácticamente son estos los que acaban con los jefes en las bandas. Por esa misma razón, son el tipo de rol que se necesita en mayor cantidad en las bandas.</li>
+        </ul>
+        <p>Los atributos principales para los dps suelen ser la fuerza (Guerrero, Paladín, Caballero de la Muerte), la agilidad (Cazador, Chamán Mejora, Pícaro, monje, Druida Feral o Cazadores de demonios Devastación) o el intelecto (Mago, Brujo, Druida Equilibrio, Sacerdotes o Chamán Elemental).</p>
+        <h2>Clases</h2>
+        <h3>Guerrero</h3>
+        <p>Es la clase más conocida del juego, es especialista en combate cuerpo a cuerpo. Según sus talentos pueden desempeñarse como Tanques (Talentos Protección) o DPS Armas y Furia. Utilizan las armaduras de placas a partir del nivel 40 y todo tipo de armas exceptuando las varitas y los bastones. Utilizan la Ira como recurso para usar sus habilidades, esta aumenta cuando el guerrero está en combate, lo que le permite usar sus facultades, pero desaparece rápidamente al salir de este. Son la única clase del juego que puede emplear armas de dos manos en una sola (en rama Furia).
+        </p>
+        <h3>Sacerdote</h3>
+        <p>Su utilidad radica en su capacidad de ser Heal o DPS, dependiendo de la rama de talentos que tome el jugador, aunque preferentemente está diseñado para la sanación. Usan la armadura de tela, por lo que no son buenos en el combate cuerpo a cuerpo, por lo que en respecto a las armas, usan bastones y varitas. Emplean el conocido sistema de maná para usar sus facultades, este disminuye a medida que las utilizan, pero se regenera periódicamente y a diferencia de la Ira, solo está limitada por el equipamiento del personaje. Posee dos ramas de talentos dedicadas a la curación, una de ellas es más rápida pensada para curar individualmente y en el uso de escudos, además de tener que hacer daño para aumentar la sanación (Disciplina), y la otra para curar a grandes cantidades de manera colectiva, aunque tarde más en cargar las habilidades (Sagrado), o bien pueden desempeñar el rol de DPS usando la rama de talentos especializada en el uso magia oscura de daño periódico (Sombra).
+        </p>
+        <h3>Paladín</h3>
+        <p>Es una clase híbrida del juego, se puede definir como un protector que lucha y sana con el poder de la Luz, pero más enfocado al combate, por lo que usan todo tipo de armas en sus respectivas ramas de talentos. Posee facultades para la lucha cuerpo a cuerpo y algunas para el apoyo a otros jugadores y de sanación, además de poseer un sistema de sellos que proporciona ventajas en la lucha a él mismo. A pesar de que son expertos en la supervivencia, sus ramas de talentos los hacen muy versátiles, al extremo de poder desempeñarse como Tanque (Protección), Healers (Sagrado) o DPS (Reprensión), y una amplia cantidad de armas. Emplean el sistema de maná, combinado con el poder sagrado, que es un tipo de energía que se carga al realizar ciertos ataques, y que sirve para activar otros ataques más poderosos. El poder sagrado tiene tres cargas. Sólo tiene un efecto devastador cuando están las tres cargas completas y usarlo consume las tres cargas, si se tiene dos cargas el daño es superior al normal y una carga es daño regular. Si no se usa, las cargas se van desactivando una por una. Usan armaduras de placas a partir del nivel 40 pero a partir del lvl 50 son maestros en placas. En la Horda los elfos de sangre y taurens pueden beneficiarse de esta clase, mientras que en la Alianza humanos, enanos y draenei pueden ser caballeros de la luz.
+        </p>
+        <h3>Mago</h3>
+        <p>Emplea el sistema de maná y aunque algunos de sus ataques causan gran daño instantáneo, prefieren silenciar a sus enemigos. Son especialistas en el control de multitudes y escape debido a sus múltiples hechizos de efecto de área y hechizos que sirven para evitar luchar con varios enemigos a la vez, y respecto a las armas usan un bastón y frecuentemente una varita. Son un verdadero incordio para los melees en JcJ ya que pueden teletransportarse, y ralentizar al contrincante, también pueden llegar a rellenar casi por completo su mana utilizando Evocación, aunque sin duda esta clase es famosa por la Polimorfia, habilidad que convierte en oveja.Hacen gran DPS quemando a sus enemigos (rama fuego), menos DPS pero más supervivencia y control con el hielo ( rama escarcha) o ataques devastadores pero caros en mana (Rama Arcana). Además tienen la habilidad de abrir portales hacia las ciudades principales de su facción para teleportar otros jugadores hacia ellas, y también teleportarse ellos mismos. Son la única clase del juego que puede crear sus propios alimentos usando mana.
+        </p>
+        <h3>Chamán</h3>
+        <p>Es también una conocida clase Híbrida del juego, pero más enfocada a la magia, es una clase que utiliza el poder de la naturaleza. Emplea el maná, a partir del nivel 40 puede usar armaduras de cota de malla y tiene la particularidad de crear tótems y escudos para ayudarlo en la batalla tanto para dañar a sus enemigos como para ayudar a sus amigos. Según su rama de talentos pueden ser buenos DPS a distancia (Elemental) o en cuerpo a cuerpo (Mejora). También puede desempañarse como sanador (Restauración), con la particular de que puede sanar a varios amigos a la vez con cadenas de sanaciones. Es un personaje bastante completo. A partir del nivel 65 puede invocar elementales, ya que son personajes que usan los elementos de la naturaleza (Tierra y Fuego) como poder.
+        </p>
+        <h3>Brujo</h3>
+        <p>Es una especie de mago oscuro, buen DPS a distancia, especializado en el daño progresivo DoT (Damage over Time) mediante maldiciones de la rama de las sombras a sus enemigos (aflicción), en daño instantáneo de la rama fuego (destrucción) y la especialidad de manejo de demonios (demonología) . Emplean el maná y tiene la capacidad de invocar espíritus malignos y demonios para que le ayuden en su lucha. Usan las armaduras más débiles (tela) y son malos contrincantes cuerpo a cuerpo, aunque gracias a la habilidad de Miedo (Fear) pueden mantener a su enemigo a distancia mientras causan daño DoT. Se usan para hacer convocaciones para mazmorras y para crear piedras de alma y salud entre otras.
+        </p>
+        <h3>Pícaro</h3>
+        <p>Son asesinos, se especializan en utilizar una gran variedad de armas con las dos manos, aunque el arma icónica de esta clase es la daga. Es una clase clave tanto para el PVE como el PVP por su capacidad de inutilizar a sus contrincantes , cualquiera de sus tres ramas de talentos (Asesinato, Sutileza y Forajido => [Combate en Wow Classic]) es compatible para las dos cosas depende de los gustos del jugador. Su rol se basa en énfasis en el sigilo, los venenos y el control. Usa energía como recurso.
+        </p>
+        <h3>Druida</h3>
+        <p>Disponible sólo en Elfos de la noche y Huargen (por parte de la Alianza) [Ampliado a Humano de Kul Tiras desde "Battle for Azeroth"] y en Taurens y Troles (por parte de la Horda)[Ampliado a Trols Zandalari, desde "Battle for Azeroth"]. Tienen la cualidad de transformarse en distintas formas animales (Guardián) para tanquear en forma de oso y oso temible, (Feral) para hacer daño cuerpo a cuerpo en forma de felino (Feral), daño a distancia (lanzador de conjuros-equilibrio) en forma de lechúcico lunar o forma de árbol de vida para curar (sanador-sanación). Además de estas formas, tienen tres formas animales denominadas de viaje, una de guepardo/reno para viajar por tierra (+40 % de velocidad), otra de león marino/orca (+50 % de velocidad a nado) para viajar bajo el agua, y otra de cuervo para volar (+150 % + 310 % de velocidad dependiendo del nivel de habilidad desbloqueado). Pueden cumplir los tres roles; tanque, sanador y DPS (cuerpo a cuerpo o a distancia) según la rama de talentos. Además, según la forma animal que se elija, tienen las habilidades y el modo de control del pícaro (forma felina) o del guerrero (forma de oso/forma de oso temible). Es la única clase capaz de desarrollar todos los roles del juego: curador, Tanque, DPS distancia y DPS cuerpo a cuerpo. Además, desde la salida de Mists of Pandaria, es también la única que cuenta con cuatro especializaciones.
+        </p>
+        <h3>Cazador</h3>
+        <p>Especialista en ataque con armas a distancia, además de acompañarle una mascota que ayuda en combate. Disponible para Elfos de la Noche, Humanos, Tauren, Orcos, Elfos de Sangre, Enanos, Draenei, Trol, Renegados, Goblin, Huargen, Pandaren y nuevas Razas Aliadas introducidas en Battle for Azeroth, (Elfos del Vacío, Draeneis Forjados por la Luz, Enanos Hierro Negro, Humano de Kul Tiras y Mecagnomos, por parte de la Alianza, y Nocheternas, Taurens de Monte Alto, Orcos Mag'har, Trols Zandalari y Vulperas por parte de la Horda). Poseen tres especializaciones en la rama de talentos: Puntería (daño con armas a distancia), Bestias (más daño con mascotas), o Supervivencia(énfasis en trampas y defensa a corta distancia). Aunque en un inicio eran capaces de llevar todo tipo de armas excepto varitas y mazas, desde el lanzamiento de Mists Of Pantaria (cuarta expansión del juego) pueden usar tan solo ballestas, arcos y armas de fuego. Utilizan armaduras de malla a partir del nivel 40. Generalmente, determinándose por sus propios talentos, hay tres tipos de mascotas:
+        </p>
+        <ol>
+            <li>Las de tipo Ferocidad, que pueden hacer mucho daño, pero no tienen demasiado aguante.</li>
+            <li>Las de tipo Astucia, que son versátiles, es decir, aguantan tanto como atacan, también ayudan controlando al oponente, ya sea tumbándolos o frenándolos completamente, muy útiles en el JcJ.</li>
+            <li>Por último están las de tipo Tenacidad, que aguantan mucho y tienen varias herramientas para generar amenaza, pero no realizan demasiado daño. Las mascotas de este tipo son muy efectivas como tanques personales en JcE.</li>
+        </ol>
+        <h3>Caballero de la Muerte</h3>
+        <p>Se le conoce por sus siglas DK (Death Knight). Fue incorporado en la expansión Wrath of the Lich King, y ha sido definido por Blizzard como la primera clase heroica (empieza en nivel 55). Para poder crear un Caballero de la Muerte se necesita tener en la cuenta otro personaje de nivel 55 o más, recientemente eliminaron la prohibición de uno por servidor. El DK es una mezcla de tácticas cuerpo a cuerpo como el uso de ataques mágicos a distancia y el uso de enfermedades de daño periódico. Emplea el sistema de runas para poder usar sus facultades. Dichas runas (sangre, escarcha, y profano, dos de cada tipo) tienen un tiempo de recarga después de haber sido utilizadas, lo que limita la frecuencia de uso de habilidades. Varias facultades exigen el uso de hasta un total de tres runas diferentes y, además de las runas, poseen un tipo de energía “auxiliar”, el poder rúnico. Ésta energía alterna es generada a medida que el dk va gastando runas y le permite usar habilidades específicas, compensando el tiempo de re-utilización de alguna de sus runas. Posee escasas habilidades para beneficiar un grupo, pero tiene facultades que le permiten restaurar grandes porciones de salud que van desde la más mínima hasta la posible cura de 75 % de la salud total del caballero de la muerte. Tienen la capacidad de engendrar un necrófago desde un cadáver, o de un aliado. El Caballero de la Muerte tiene como ramas de talentos Sangre(énfasis en daño directo, regeneración de vida y uso de armas de dos manos), Escarcha (uso de la doble empuñadura además de ataques rápidos de daño de escarcha), y profano (mejora de las enfermedades y en el uso de esbirros no muertos); y es capaz de desempeñar dos roles: tanque, y DPS cuerpo a cuerpo, en un principio el DK podía usar cualquier rama de talentos para desempeñar el papel de tanque dependiendo de como se construyera la rama y en los gustos del jugador . Los DKs comienzan con un atuendo único predefinido. Mientras van completando las misiones de clase obtienen parte de su armadura final. Desde "Battle for Azeroth", TODAS las razas pueden ser Caballeros de la Muerte, con la condición de tener algún Caballero de la muerte a nivel máximo previamente.
+        </p>
+        <h3>Monje</h3>
+        <p>Los maestros pandaren han decidido compartir sus ancestrales artes marciales con los jóvenes luchadores de la Alianza y la Horda. Aprovechando su fuerza interior y su poderosa energía "chi", los monjes son capaces de desempeñar cualquier papel: daño, defensa o sanación.
+
+            Los monjes son maestros del combate a mano y solo empuñan las armas para sus letales golpes de gracia (viajero del viento). Los monjes sanadores aportan armonía y equilibrio a todos los grupos y pueden sanar hasta las heridas más graves con remedios antiguos y artes espirituales (tejedor de la niebla). Son pocos los que pueden confiar en sobrevivir ante la extrema destreza del monje maestro cervecero, cuyas intensas bebidas e impredecible estilo de combate absorben unas cantidades de daño impresionantes (maestro cervecero).
+        </p>
+        <h3>Cazador de Demonios</h3>
+        <p>Los cazadores de demonios, discípulos de Illidan Tempestira, cargan con un oscuro legado que atemoriza a aliados y enemigos por igual. Los Illidari se sirven de magia vil y magia caótica, energías que durante eones han amenazado Azeroth y que, según ellos, son esenciales para hacer frente a la Legión Ardiente. Con los poderes de los demonios a los que han asesinado, los Illidari desarrollan rasgos demoníacos que provocan repulsión y pavor entre sus congéneres, los elfos.
+
+            Los cazadores de demonios sacrifican la armadura pesada para ganar velocidad, lo que les permite recortar distancias rápidamente y mutilar a sus enemigos con armas de una mano. No obstante, los Illidari también deben aprovechar su agilidad en aras de la defensa para asegurar la victoria, sus roles son: DPS y Tanque.
+        </p>
+    </section>
+    <section class="main-section" id="profesiones">
+        <header>Profesiones</header>
+        <p>Todo jugador de World of Warcraft puede aprender y desarrollar profesiones, que son habilidades que le permiten recoger y/o fabricar distintos objetos que pueden ser útiles para su desarrollo como personaje o que pueden servirle económicamente para su venta. Existen dos tipos de profesiones, las profesiones primarias y las secundarias. Cada jugador puede aprender como máximo dos profesiones primarias del catálogo de profesiones existentes, y puede aprender todas las profesiones secundarias.
+
+            Para aprender una profesión, hay que acudir a un instructor de la misma en las ciudades y algunos poblados. Todas las profesiones tienen distintos niveles, y cada nivel permite mejorar la habilidad hasta un número máximo de puntos, que se suben practicando en la profesión, ya sea recogiendo o fabricando algo. La cantidad de puntos permitirá recoger materiales más difíciles, así como aprender a fabricar objetos más poderosos. Todas las profesiones pueden aprenderse desde nivel 5, salvo la profesión secundaria arqueología, que requiere que el jugador sea nivel 20
+        </p>
+    </section>
+    <section class="main-section" id="idiomas">
+        <header>Idiomas</header>
+        <p>Los idiomas son un sistema implementado por Blizzard para evitar que los jugadores de las facciones contrarias se comuniquen entre sí, con vistas a prevenir guerras de descalificaciones o insultos entre facciones por los chats comunes. Cada facción tiene un idioma comprensible por todas las razas de la facción, y que por tanto es el idioma más utilizado en cada sitio. No obstante, todas las razas tienen idiomas propios que les sirven para comunicarse únicamente con los miembros de su propia raza (salvo humanos y orcos, cuyos idiomas son los idiomas comunes de facción). El idioma que emplea el jugador es seleccionable a través de su interfaz. Si un jugador al comunicarse emplea un idioma que su interlocutor no puede comprender, el interlocutor no verá el texto introducido por el hablante sino una frase incomprensible en el idioma que el jugador emplea. En todo caso que el hablante no emplee el idioma común o el orco, se verá entre corchetes el nombre del idioma que utiliza.
+
+            Sin embargo existen dos excepciones: los Pandaren (que pueden ser jugados en las dos facciones) se pueden comunicar entre sí con su propio idioma, al igual que los cazadores de demonios, quienes hablan conjuntamente el demoníaco.
+        </p>
+    </section>
+    <section class="main-section" id="desarrollo">
+        <header>Desarrollo</header>
+        <p>World of Warcraft fue anunciado por primera vez por Blizzard en el European Computer Trade Show en septiembre de 2001. El desarrollo llevó unos 4 o 5 años e incluyó un extenso periodo de pruebas. Los gráficos 3D usaban elementos del motor de juegos de Warcraft III: Reign of Chaos. El juego fue diseñado como un ambiente abierto donde los jugadores pudieran hacer lo que quisieran.
+
+            World of Warcraft funciona de forma nativa tanto en ordenadores Macintosh de Apple como en Windows. El juego en caja usa un CD híbrido para instalarlo. Los jugadores pueden jugar juntos sin importar el sistema operativo. No existe ninguna versión oficial para ningún otro sistema operativo aunque puede ser jugado en GNU/Linux o FreeBSD mediante Wine.
+        </p>
+        <h2>Desarrollo poslanzamiento</h2>
+        <p>El Lanzador de Blizzard es un programa diseñado para ejercer como punto de partida para los jugadores de World of Warcraft, sirve tanto para arrancar el juego como para actualizarlo. Fue incluido por primera vez en el parche 1.8.3. Además también incluye noticias, acceso a la página de asistencia técnica, acceso a los reinos de prueba (para probar parches antes de su lanzamiento al público), actualizaciones a Warden (sistema antitrampas implantado por Blizzard) y actualizaciones para el propio lanzador. El parche 3.0.8 rediseñó el lanzador y permite cambiar la configuración del juego. Un nuevo rediseño en la versión 4.0.1 incluyó la actualización "al vuelo" permitiendo la descarga e instalación de actualizaciones de contenido mientras se está utilizando el juego.
+
+            Cuando se añade contenido nuevo cambian los requerimientos mínimos, el parche 1.12.0 amplió los requisitos de RAM a 512 MB y se dejó de soportar oficialmente Windows 98. En la versión 4.0.3, se eliminó el soporte y la compatibilidad para Mac con procesador PowerPC.
+        </p>
+        <h2>Lanzador Battle.net</h2>
+        <p>En junio de 2013 Blizzard anunció un nuevo lanzador, de la plataforma entera de Battle.net, con el que ha intentado aunar en un solo programa los diferentes lanzadores de sus juegos.
+        </p>
+    </section>
+    <section class="main-section" id="recepcion">
+        <header>Recepción</header>
+        <h2>Crítica</h2>
+        <p>World of Warcraft fue aclamado universalmente por la crítica después de ser lanzado, siendo precedido de un período de grandes expectativas antes de su publicación. Aunque el juego sigue un modelo similar a otros del género y usa conceptos de los juegos de rol, las nuevas propuestas para reducir las pausas entre encuentros fueron bien recibidas. Como por ejemplo la muerte, en algunos MMORPG previos el jugador sufría una fuerte penalización por morir, mientras que en World of Warcraft el jugador se recuperaba y comenzaba a jugar rápidamente. El combate fue otro espacio donde se produjeron cambios, al permitir al jugador recuperarse rápido del daño sufrido podían volver rápido a la batalla. Estos cambios daban la sensación que harían al juego más accesible a jugadores ocasionales, que podrían jugar por periodos cortos de tiempo y aun así conseguir algo, mientras que a la vez se mantenía la profundidad en el juego de manera que se permitiera a los jugadores de los niveles más altos mantener el interés en el juego. El concepto de "bono por descanso" o el incremento de la velocidad con la que el jugador gana experiencia permitía a los jugadores alcanzar rápidamente el nivel de sus amigos.
+
+            Las misiones formaban parte íntegra del juego siendo la mayoría de las veces usadas para continuar la historia en el juego o para guiar al jugador a través de él. El gran número de misiones en cada localización fue muy popular, así como las recompensas por completarlas. Aunque en realidad no eliminaban la necesidad de repetir una tarea o matar de manera repetida a una criatura, la percepción que se tenía de esas acciones era distinta.Las misiones hicieron que los jugadores exploraran cada sección del mundo, lo que repercutió negativamente en los jugadores sociales o de rol. Las misiones que implicaban conseguir objetos de los cuerpos de las criaturas no fueron tan populares. Algunos críticos mencionaron que la falta de misiones que obligan a los jugadores a agruparse hacía sentir a veces que el juego estaba diseñado para un solo jugador, mientras que otros se quejaban de que las mazmorras (que se deben jugar en grupo) no eran fáciles para nuevos jugadores y costaban demasiado tiempo acabarlas. En días posteriores a lanzarse el juego, algunas misiones tenían errores de software haciéndolas imposibles de completar, mientras que la masiva presencia de jugadores nuevos en algunas áreas hacía que no existieran criaturas para matar, o que los jugadores tuvieran que esperar turno para matar a alguna criatura en particular para poder completar misiones.
+            
+            El sistema de personajes fue bien recibido, con críticos señalando a cada clase como viable e interesante, con características únicas, así como que cada raza tenía un toque de distinción y de aspecto. El desarrollo de los personajes también fue destacado, así como el sistema de talentos, su gran diversidad de opciones y el sistema de profesiones. La personalización física de los personajes fue considerada una de las cosas menos interesantes del juego, aunque el nivel de detalle de los modelos fue elogiado.
+            
+            La apariencia del juego fue ensalzada. La característica más popular fue el que un jugador pudiera ir de un lado a otro del continente sin que se le presentara una pantalla de carga. Se dijo del ambiente que "dejaba sin aliento", haciendo que los jugadores no se perdieran y que cada área del juego tuviera un aspecto único y extremadamente grande. Los críticos describieron el ambiente como "una cuidadosa mezcla de dibujos animados, fantasía y realidad ". El juego funcionaba bien en casi cualquier tipo de sistema, aunque algunos los describieron como demasiado básico y mencionaron que algunos efectos emborraban un poco la imagen. La capacidad de volar sobre los escenarios fue descrita como "muy atmosférica". La interfaz fue descrita como simple y con ayudas para el novato.
+            
+            El sonido fue muy bien recibido, en particular la música de fondo. Asignar distintas músicas a distintas áreas hacía que los jugadores sintieran mayor inmersión en el juego y más interesante volver a jugar. Los sonidos y voces de los personajes, tanto jugadores como no jugadores; así como los sonidos de efectos añadían personalidad al juego.
+            
+            World of Warcraft ganó varios premios tras su lanzamiento, incluyendo Selecciones de Editores (Editor's Choice awards). Además, ganó varios premios anuales de medios, siendo descrito como el mejor videojuego de rol y MMORPG. Los gráficos y el sonido también recibieron mención en los premios anuales, sobre todo el estilo de dibujos animados y el sonido en general. El juego recibió el premio al mejor producto de entretenimiento para Mac OS X en los premios Apple Design en 2005. finalmente, World of Warcraft fue reconocido en los premios Spike TV de 2005 como el mejor juego de PC, mejor juego multijugador, mejor RPG y juego más adictivo. En 2008, World of Warcraft fue honrado (junto con Neverwinter Nights y EverQuest) en la quincuagésimo novena edición de los premios Emmy de la tecnología e ingeniería por su avance en juegos MMORPG. Game Informer situó a World of Warcraft como el undécimo en su lista de los mejores dos cientos juegos de todos los tiempos. La expansión Wrath of the Lich King recibió el premio al Mejor Videojuego en la categoría de empresas otorgado por el certamen imagina en su edición del año 2009
+        </p>
+        <pre class="pre">
+            <code>
+Puntuaciones de reseñas
+            </code>
+            <code>
+Evaluador           Calificación
+            </code>
+            <code>
+GameRankings            92%    
+Metacritic              93%    
+            </code>
+        </pre>
+        <pre class="pre">
+            <code>
+Puntuaciones de críticas
+            </code>
+            <code>
+Publicación          Calificación
+            </code>
+            <code>
+1UP.com                 A     
+ActionTrip              9.1/10
+Edge                    9/10  
+Eurogamer               8/10  
+Game Informer           9.5/10
+GamePro                 5/5   
+GamesMaster             93%   
+GameSpot                9.5/10
+GameSpy                 5/5   
+IGN                     9.1/10
+PC Gamer RU             94%   
+            </code>
+        </pre>
+            
+        <h2>Reconocimientos</h2>
+        <p>En 2012 la revista Forbes incluyó a la banda sonora de World of Warcraft en la lista de los doce mejores soundtracks de videojuegos de todos los tiempos</p>
+    </section>
+</main>
+  <footer class="footer">
+    <p>Texto Copiado de <a href="https://en.wikipedia.org/wiki/World_of_Warcraft" target="_blank">Wikipedia</a></p>
+    
+  </footer>
+{% endblock %}

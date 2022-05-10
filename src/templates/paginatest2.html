@@ -1,0 +1,111 @@
+{% extends './layout.html' %}
+
+{% block tittle %}paginatest2{% endblock %}
+
+{% block customCSS %}
+    <!-- Bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/paginatest2.css')}}">
+    <script src="https://kit.fontawesome.com/62ea397d3a.js" crpssprgom="anonymous"></script>
+{% endblock %}
+
+{% block body %}
+<header>
+    <nav class="nav1">
+        <ul class="nav__ul nav__responsive-ul">
+            <div class="nav__responsive-button-container">
+                <div class="nav__responsive-button"><i class="fas fa-bars"></i></div>
+            </div>
+            <div class="nav__div-container nav__responsive-div-container">
+                <!-- <img class="mb-4" src="{{url_for('static', filename='img/underdogs.png')}}" alt="" width="150" height="150"> -->
+                <span class="nav__span nav__responsive-span span__img"><img src="{{url_for('static', filename='img/underdogs.png')}}" width="35" height="35"> </span>
+                <div class="nav__div nav__responsive-div"><i class="fas fa-home"></i><a href=home>Home</a> </div>
+                <div class="nav__div nav__responsive-div"><i class="fas fa-user-friends"></i><a href=paginatest1>Test 1</a> </div>
+                <div class="nav__div nav__responsive-div"><i class="fas fa-dollar-sign"></i><a href=form>Primer Form</a> </div>
+                <div class="nav__div nav__responsive-div"><i class="fas fa-question-circle"></i><a href=paginatest3>Test 3</a> </div>
+                <div class="nav__div nav__responsive-div"><i class="fas fa-dog"></i><a href=paginatest4>Test 4</a> </div>
+                <div class="nav__div nav__responsive-div"><i class="fas fa-cat"></i><a href=paginatest5>Test 5</a> </div>
+                <!-- <a class="btn btn-secondary button-logout" href="{{ url_for('logout') }}">Logout</a> -->
+                    <span class="nav__span nav__responsive-span button-logout"><a class="btn btn-secondary button-logout" href="{{ url_for('logout') }}">Logout</a> </span>
+            </div>
+        </ul>
+    </nav>
+</header>
+<div class="main">
+    <header class="header">
+        <h1 id="title" class="text-center">Underdogs Formulario</h1>
+        <p id="description" class="description text-center">Si desea unirse a Underdogs complete el siguiente formulario</p>
+    </header>
+    <div class="flex-container">
+        <form id="survey-form" class="form">
+            <div class="form__section">
+                <label id="name-label" for="name">Nombre</label>
+                <input id="name" type="text" name="name" class="form__input" placeholder="Nombre" required>
+            </div>
+            <div class="form__section">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" name="email" class="form__input" placeholder="Email" required>
+            </div>
+            <div class="form__section">
+                <label for="asunto">Asunto</label>
+                <input name="asunto" type="text" class="form__input" placeholder="Asunto">
+            </div>
+            <div class="form__section">
+                <label id="number-label" for="age">Edad</label>
+                <input type="number" name="age" id="number" min="1" max="150" placeholder="Edad" class="form__input" required>
+            </div>
+            <div class="form__section">
+                <label>Cual sera su Rol en la Hermandad ?</label>
+                <select id="dropdown" class="form__input color-none" required>
+                  <option value="none" disabled selected value>Selecciona un Roll</option>
+                  <option value="Tank">Tank</option>
+                  <option value="Heal">Heal</option>
+                  <option value="Dps">DPS</option>
+                  <option value="Mixto">Tank & Heal</option>
+                  <option value="Mixto1">Tank & DPS</option>
+                  <option value="Mixto2">Heal & DPS</option>
+                  <option value="Mixto3">Tank, Heal & DPS</option>
+                </select>
+              </div>
+            <div class="form__section">
+                <label>Que tan experimentado eres en END-GAME ?</label>
+                <div class="div-input-radio">
+                    <div>
+                        <input name="Experiencia" value="Muy Experimentado" type="radio"/> Muy Experimentado
+                    </div>
+                    <div>
+                        <input name="Experiencia" value="Experimentado" type="radio"/> Experimentado
+                    </div>
+                    <div>
+                        <input name="Experiencia" value="Poco Experimentado" type="radio"/> Poco Experimentado
+                    </div>
+                </div>
+            </div>
+            <div class="form__section">
+                <label>Cuales son tus Cualidades como Player ?</label>
+                <div class="div-checkbox">
+                    <div><input value="Compañero" type="checkbox"/> - Compañero</div>
+                    <div><input value="Respetuoso" type="checkbox"/> - Respetuoso</div>
+                    <div><input value="Amable" type="checkbox"/> - Amable</div>
+                    <div><input value="Tener Empatia" type="checkbox"/> - Empatia</div>
+                    <div><input value="Compromiso" type="checkbox"/> - Compromiso</div>
+                    <div><input value="Democrático" type="checkbox"/> - Democrático</div>
+                </div>
+            </div>
+              <div class="form__section">
+                <label for="textarea">Contenido del Mensaje</label>
+                <textarea name="textarea"class="form__input" placeholder="Escriba su Mensaje"></textarea>
+            </div>
+              <div class="form__section">
+                <input id="submit" type="submit" class="form__input">
+            </div>
+        </form>
+        <div class="form-img">
+            <img src="https://game-tournaments.com/media/logo/t25586.png" height="200" width="200">
+        </div>
+    </div>
+    <footer class="footer">
+        <h2>High End Game International Guild Underdogs</h2>
+    </footer>
+</div>
+{% endblock %}

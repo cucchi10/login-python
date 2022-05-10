@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+button, input, optgroup, select, textarea, option, footer {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+body{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 100;
+    font-size: 18px;
+    background-color: rgb(75, 69, 69);
+    padding: 0;
+    margin: 0;
+}
+
+.form-container-link, .video-container-link, .politica-container-link, .precios-container-link {
+    padding-top: 50px;
+}
+
+.header-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav__ul {
+    background-color: rgb(116, 139, 145);
+}
+
+.nav__responsive-button-container {
+    display: none; 
+}
+
+.nav__div-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    justify-items: start;
+    align-items: center;
+}
+
+.nav__div {
+    padding: 6px;
+} 
+
+.span__img {
+    flex-shrink: 0; 
+    margin: 4px 15px;
+}
+
+.button-logout {
+    flex-grow: 10;
+    text-align: end;
+}
+
+.nav__div i {
+    color: rgb(75, 69, 69);
+    box-sizing: border-box;
+    margin-right: 6px;
+}
+
+.nav__div a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.nav__div:hover > a{
+    color:rgb(75, 69, 69);
+}
+
+.form-container {
+    color: beige;
+    display: flex; 
+    flex-wrap: wrap;
+    margin: 60px auto;
+    align-items: center;
+    justify-content: center;
+    background: rgb(41, 40, 40);
+    border-radius: 5px;
+    max-width: 400px;
+    border: 4px solid rgb(116, 139, 145);
+}
+
+.form {
+    min-width: 200px; 
+    padding: 30px;
+    flex: 1;
+    order: 5;
+}
+
+.form__input {
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+.form__input:focus {
+    background: linear-gradient(to bottom, transparent, rgb(75, 69, 69));
+    outline: none;
+    border-bottom: 3px solid rgb(71, 100, 107);
+    border-radius: 1%;
+}
+
+.form input[type="submit"] {
+    background-color: rgb(71, 100, 107);
+}
+
+.form input[type="submit"]:hover {
+    background-color: rgb(116, 139, 145);
+}
+
+
+label {
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(116, 139, 145);
+    border-radius: 5px;
+}
+
+select option {
+    background-color: rgb(116, 139, 145);
+    color: rgb(75, 69, 69);
+}
+
+.div-input-radio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.div-input-radio div:hover {
+    color: rgb(116, 139, 145);
+}
+
+.grid-container-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 60px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-main {
+    background-color: rgb(88, 86, 86);
+    border: 2px dotted rgb(116, 139, 145);
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 5px;
+    margin: 5px;
+    align-items: center;
+
+}
+
+.grid-main p {
+    color: beige;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 60px auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.video h3 {
+    background-color: rgb(88, 86, 86);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px dashed rgb(116, 139, 145);
+}
+
+.video iframe {
+    max-width: 560px;
+    width: 100%;
+}
+
+
+.flex-box-conteiner {
+    color: beige;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 60px auto;
+}
+
+.flex-box {
+    max-width: 250px;
+    background-color: rgb(88, 86, 86);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 15px;
+    border: 1px solid rgb(116, 139, 145);
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.flex-box-div {
+    background-color: rgb(116, 139, 145);
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    border-radius: 3px;
+    font-weight: 900;
+}
+
+.flex-box h2 {
+    color: rgb(214, 69, 170);
+    margin: 15px;
+}
+
+.flex-box ol {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.flex-box ol li {
+    list-style-type: none;
+    padding: 5px 0;
+    font-weight: 200;
+}
+
+.flex-box button {
+    background-color: rgb(71, 100, 107);
+    border-radius: 5px;
+    font-weight: 400;
+    margin: 15px 0;
+    padding: 8px 25px;
+}
+
+.footer {
+    background-color: rgb(88, 86, 86);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-copy {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9;
+    color: gray;
+}
+
+
+@media only screen and (max-width: 625px) {
+
+    #header {
+        padding-bottom: 60px;
+    }
+    .nav__responsive-ul {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 64px;
+        background-color: rgb(116, 139, 145);
+    }
+
+    .nav__responsive-button-container {
+        text-align:center;
+        z-index: 99999999;
+        position: absolute;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        justify-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(116, 139, 145);
+    }
+
+    .nav__responsive-div-container {
+        position: relative;
+        top: -300px;
+        transition: all 1.2s;
+        background-color: rgb(71, 100, 107);
+        align-items: flex-end;
+    }
+
+    .nav__responsive-ul:hover > .nav__responsive-div-container {
+        top: 0px;
+        padding-top: 68px;
+        flex-direction: column;
+    }
+
+    .span__img {
+        display: none;
+    }
+
+    .nav__responsive-button {
+        margin: 19px 10px;
+        font-size: 25px;
+    }
+
+    .nav__responsive-button-img {
+        margin: 4px 15px;
+    }
+
+    .politica-icono {
+        display: none;
+    }
+    
+    .grid-main {
+        display: flex;
+    }
+    
+    .flex-box-conteiner{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-box {
+        min-width: 200px;
+    }
+}

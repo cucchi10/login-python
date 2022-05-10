@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tapestry&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: beige;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Section Header */
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(122, 141, 135);
+    border-bottom: solid;
+    border-color: rgb(94, 109, 104);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}
+
+.navbar .logo {
+    width: 60px;
+    height: 60px;
+    grid-column: 1/2;
+}
+
+.navbar .menu {
+    grid-column: 3/7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .menu li {
+    margin-left: 5px;
+    list-style: none;
+    color: beige;
+}
+
+.navbar .menu a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: #181818;
+    cursor: pointer;
+    color: beige;
+}
+
+.navbar .menu a:hover {
+    color:rgb(122, 81, 81);
+}
+
+.navbar .menu-bar {
+    display: none;
+}
+
+.navbar .shopping {
+    grid-column: 8/9;
+}
+
+.header-fa {
+    font-size: 1.3em;
+}
+
+
+.header-fa:hover {
+    color:rgb(122, 81, 81);
+}
+
+/* Section Main */
+
+.hero {
+    padding-top: 60px;
+    background-color: rgb(75, 69, 69);
+    display: flex;
+    flex-direction: column;
+}
+
+.img-fondo{
+    display: grid;
+    height: 100vh;
+    background-image: linear-gradient(rgb(16, 16, 16, .8),rgb(16, 16, 16, .8)), url(https://www.pixel4k.com/wp-content/uploads/2021/08/tiger-close-up-4k_1629139703.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+
+.hero .info-content {
+    grid-column: 12/19;
+    grid-row: 4/6;
+}
+
+.hero h3 {
+    font-family: 'Tapestry', cursive;
+    font-size: 1.5em;
+    text-shadow: 3px 4px rgb(92, 65, 65);
+    }
+
+.hero h1 {
+    font-family: 'Tapestry', cursive;
+    font-size: 5em;
+    color: rgb(122, 141, 135);
+    text-shadow: 5px 6px rgb(92, 65, 65);
+    }
+
+
+.hero p {
+    font-family: 'Tapestry', cursive;
+    font-size: 1em;
+    }
+
+.hero .btn {
+    font-size: 1em;
+    background: none;
+    padding: 10px 20px;
+    border: 1px solid  rgb(122, 141, 135);
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.hero .btn:hover {
+    background-color:rgb(122, 81, 81);
+    color: rgb(122, 141, 135);
+}
+
+.project-fondo {
+    padding-top: 60px;
+    display: flex;
+}
+
+.project-ready {
+    text-align: center;
+    width: 100%;
+}
+
+.project-ready h2 {
+    font-family: 'Tapestry', cursive;
+    font-size: 5em;
+    margin: 50px auto;
+    text-shadow: 5px 10px rgb(92, 65, 65);
+    }
+
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 1rem;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.project-tile {
+    max-width: 400px;
+    padding-bottom: 25px;
+    margin: 25px;
+    text-decoration: none;
+    background: rgb(122, 141, 124);
+    box-shadow: 2px 3px 5px rgb(0 0 0 / 50%);
+    border-radius: 5px;
+    
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(122, 141, 124);
+}
+
+
+.project-title p{
+    display: block;
+    font-size: 2rem; 
+}
+
+.project-ready .btn {
+    margin: 50px auto;
+}
+
+
+
+/* Section Footer */
+
+.footer {
+    border-top: solid;
+    border-color: rgb(92, 65, 65);
+    display: grid;
+    height: 80px;
+    align-items: center;
+    background-color: rgb(122, 81, 81);
+    grid-template-areas:
+    "github-online follow-me social-network";
+}
+
+
+.footer .github-online {
+    grid-template-areas: github-online;
+    display: flex;
+    justify-content: center;
+    padding: 26px;
+}
+
+.footer .follow-me {
+    grid-template-areas: follow-me;
+    text-align: center;
+}
+
+.footer .social-network {
+    grid-template-areas: social-network;
+    text-align: center;
+}
+
+.footer .github-online a {
+    text-decoration: none;
+}
+
+.footer .github-online a h4:hover {
+    color:rgb(122, 141, 135);
+}
+
+.footer-fa {
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+.footer-fa:hover {
+    color: rgb(122, 141, 135);
+}
+
+@media only screen and (max-width: 700px) {
+
+    /* Section Header */
+
+    .navbar .shopping {
+        display: none;
+    }
+
+    .navbar .menu-bar {
+        display: block;
+        grid-column: 8/9;
+        font-size: 1.8em;
+        cursor: pointer;
+    }
+    
+    .navbar .menu {
+        position: absolute;
+        width: auto;
+        padding-right: 5px;
+        padding-left: 5px;
+        height: 40vh;
+        display: grid;
+        grid-column: 7/9;
+        align-items: center;
+        background-color: rgb(122, 141, 135);
+        border-bottom: solid;
+        border-left: solid;
+        border-color: rgb(94, 109, 104);
+        top: 60px;
+        right: -180px;
+        transition: all 1.2s;   
+    }
+
+    .navbar:hover > .menu {
+        right: 0;
+    }
+
+
+    /* Section Main */
+
+    .img-fondo {
+        background-image: linear-gradient(rgb(16, 16, 16, .8),rgb(16, 16, 16, .8)), url(https://i.pinimg.com/originals/ca/23/30/ca233007aa4c218c2df1e9739d954e38.jpg);
+    }
+
+    .img-fondo .info-content {
+        grid-column: 2/19;
+        grid-row: 5/8;
+    }
+
+    .img-fondo h1 {
+        font-size: 3.5em;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Section Footer */
+
+    .footer .follow-me {
+        display: none;
+    }
+}
+

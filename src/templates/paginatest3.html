@@ -1,0 +1,146 @@
+{% extends './layout.html' %}
+
+{% block tittle %}paginatest3{% endblock %}
+
+{% block customCSS %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/paginatest3.css')}}">
+    <script src="https://kit.fontawesome.com/62ea397d3a.js" crpssprgom="anonymous"></script>
+{% endblock %}
+
+{% block body %}
+<header id="header" class="header-nav">
+    <nav id="nav-bar" class="nav">
+        <ul class="nav__ul nav__responsive-ul">
+            <div class="nav__responsive-button-container">
+                <span class="nav__responsive-button-img"><img id="header-img" src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_930,h_257/https://conejoblancoad.com/wp-content/uploads/2018/11/logo-conejo-blanco.png" height="50" width="181"> </span>
+                <div class="nav__responsive-button"><i class="fas fa-bars"></i></div>
+            </div>
+            <div class="nav__div-container nav__responsive-div-container">
+                <span class="nav__span nav__responsive-span span__img"><img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_930,h_257/https://conejoblancoad.com/wp-content/uploads/2018/11/logo-conejo-blanco.png" height="50" width="181"> </span>
+                <div class="nav-link nav__div nav__responsive-div"><i class="fas fa-home"></i><a href="home">Home</a> </div>
+                <div class="nav-link nav__div nav__responsive-div"><i class="fas fa-truck"></i><a href="paginatest1">Test 1</a> </div>
+                <div class="nav-link nav__div nav__responsive-div"><i class="fas fa-dollar-sign"></i><a href="paginatest2">Test 2</a> </div>
+                <div class="nav-link nav__div nav__responsive-div"><i class="fas fa-question-circle"></i><a href="form">Primer Form</a> </div>
+                <div class="nav-link nav__div nav__responsive-div"><i class="fas fa-user-friends"></i><a href="paginatest4">Test 4</a></div>
+                <div class="nav-link nav__div nav__responsive-div"><i class="fas fa-dog"></i><a href="paginatest5">Test 5</a></div>
+            </div>
+        </ul>
+    </nav>
+</header>
+<div class="form-container-link" id="form">
+    <div class="form-container"  action="https://www.freecodecamp.org/email-submit">
+        <form id="survey-form" class="form">
+            <div class="form__section">
+                <label id="name-label" for="name">Nombre</label>
+                <input id="name" type="text" name="name" class="form__input" placeholder="Nombre" required>
+            </div>
+            <div class="form__section">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" name="email" class="form__input" placeholder="Email" required>
+            </div>
+            <div class="form__section">
+                <label>Como sera su envio ?</label>
+                <div class="div-input-radio">
+                    <div>
+                        <input name="Tipo_Envio" value="A Su Hogar" type="radio"/> A Mi Hogar
+                    </div>
+                    <div>
+                        <input name="Tipo_Envio" value="Punto Cercano De Retiro" type="radio"/> Punto Cercano De Retiro
+                    </div>
+                    <div>
+                        <input name="Tipo_Envio" value="Lo Busca Usted Mismo" type="radio"/> Lo Busca Usted Mismo
+                    </div>
+                </div>
+            </div>
+            <div class="form__section">
+                <input id="submit" type="submit" class="form__input">
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<div class="video-container-link" id="video">
+    <section class="video">
+        <h3>Espera tu Pedido con la Mejor Musica</h3>
+        <iframe height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+</div>
+
+<div class="politica-container-link" id="politica">
+    <section class="grid-container-main">
+        <div class="grid-main">
+            <span class="politica-icono"><img src="https://images.vexels.com/media/users/3/200092/isolated/preview/a03623162f1fbf53e660e401b6e7f58a-icono-de-envio-trazo-rosa.png" height="50" width="50"></span>
+            <div class="texto-politca">
+                <h2>El Envio Mas Rapido</h2>
+                <p>Te enviamos lo que pidas, total la espalda de los Rappitenderos no la pagamos nosotros. Los tenemos a todos en negro y si no llega a tiempo el envio lo pagan Los Rappis</p>
+            </div>
+        </div>
+        <div class="grid-main">
+            <span class="politica-icono"><img src="https://images.vexels.com/media/users/3/199990/isolated/preview/903d92263dc2b80bb9f5d684fb4e07c8-etiqueta-etiqueta-icono-trazo-rosa.png" height="50" width="50"></span>
+            <div class="texto-politca">
+                <h2>Garantia De Fabrica</h2>
+                <p>Traemos todo de China. En contenedores defectuoso o rechazados de Paises mas desarrollados, que compramos evadiendo impuestos </p>
+            </div>
+        </div>
+        <div class="grid-main">
+            <span class="politica-icono"><img src="https://images.vexels.com/media/users/3/199974/isolated/preview/8134123e4ab14fc10a4c8e74faf382d5-trazo-de-icono-de-casa.png" height="50" width="50"></span>
+            <div class="texto-politca">
+                <h2>En La Comodidad De Tu Hogar</h2>
+                <p>Para que el Rappitendero cobre el envio tiene que marcar tu casa, y nosotros organizamos un Desvalije a las semanas siguentes</p>
+            </div>
+        </div>
+        <div class="grid-main">
+            <span class="politica-icono"><img src="https://images.vexels.com/media/users/3/199829/isolated/preview/5fbbd48566c0929680fb8cf0f60226da-icono-de-burbujas-de-chat-icono-de-burbujas-de-chat.png" height="50" width="50"></span>
+            <div class="texto-politca">
+                <h2>La Mejor Atencion PostVenta</h2>
+                <p>Nunca te van a contestar nadie a tus Reclamos, tenemos reduccion de personal. Apenas que le pagamos al Custodia del Deposito</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="precios-container-link" id="flexbox"></div>
+    <section class="flex-box-conteiner">
+        <div class="flex-box">
+          <div class="flex-box-div">Tipo Correo Argenino</div>
+          <h2>$ 4500</h2>
+          <ol>
+            <li>Te llega Roto</li>
+            <li>Te Apuñala si espera mas de 3 Min</li>
+            <li>Si es Comida seguro se lo come</li>
+            <li>Te toca a tu Hermana</li>
+          </ol>
+          <button>Adquirir</button>
+        </div>
+        <div class="flex-box">
+          <div class="flex-box-div">Tipo Ocasa</div>
+          <h2>$900</h2>
+          <ol>
+            <li>El Rappi estara Drogado</li>
+            <li>Te va a tocar el Bulto</li>
+            <li>No llega nunca</li>
+            <li>No se lava las manos luego de Miar</li>
+          </ol>
+          <button>Adquirir</button>
+        </div>
+        <div class="flex-box">
+          <div class="flex-box-div">Tipo Andreani</div>
+          <h2>$150000</h2>
+          <ol>
+            <li>Te lo Entrega una Rubia</li>
+            <li>La podes hacer pasar adentro</li>
+            <li>Lllega con olor a PERFUME</li>
+            <li>Tiene alta BURRA</li>
+          </ol>
+          <button >Adquirir</button> 
+        </div>
+    </section>
+</div>
+
+<footer class="footer" id="footer">
+    <span class="footer-img"><img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_930,h_257/https://conejoblancoad.com/wp-content/uploads/2018/11/logo-conejo-blanco.png" height="50" width="181"> </span>
+    <span class="footer-copy">Copyright 2022, Conejo Blanco</span>
+</footer>
+
+{% endblock %}
